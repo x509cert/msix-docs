@@ -1,5 +1,5 @@
 ---
-title: Sign packages with Azure Key Vault
+title: Sign packages with keys stored in Azure Key Vault
 description: This article describes how to sign your app package with a certificate from Azure Key Vault.
 ms.date: 05/07/2020
 ms.topic: article
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Sign packages with Azure Key Vault
 
-In Visual Studio 2019 version 16.6 Preview 3 and later versions, you can sign UWP and desktop app packages with a certificate stored in Azure Key Vault for development and test scenarios. This tool extracts your public and private keys from your Azure Key Vault and loads them in the certificate store on your development computer in order to sign your package with SignTool.exe.
+In Visual Studio 2019 version 16.6 Preview 3 and later versions, you can sign UWP and desktop app packages with the private key associated with a certificate stored in Azure Key Vault for development and test scenarios. This tool extracts your public and private keys from your Azure Key Vault and loads them in the certificate store on your development computer in order to sign your package with SignTool.exe.
 
 > [!IMPORTANT]
 > The process described in this article is intended for development and test scenarios only. This process is not considered best practice for your private keys used for distribution. To ensure best security practices, your private keys for distribution should be handled only by the tooling recommended by your Continuous Integration and Continuous Deployment (CI/CD) platform.
